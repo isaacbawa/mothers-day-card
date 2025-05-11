@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy First Mother's Day, Mercy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fdf2f8;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        .dancing-script {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #ffffff, #fce7f3);
+            box-shadow: 0 10px 30px rgba(249, 168, 212, 0.4);
+        }
+
+        .heart {
+            animation: heartbeat 1.5s infinite;
+            transform-origin: center;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+
+            14% {
+                transform: scale(1.1);
+            }
+
+            28% {
+                transform: scale(1);
+            }
+
+            42% {
+                transform: scale(1.15);
+            }
+
+            70% {
+                transform: scale(1);
+            }
+        }
+
+        .flower {
+            position: absolute;
+            opacity: 0;
+            animation: float 15s infinite linear;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .photo-frame {
+            border: 12px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
+            transform: rotate(-3deg);
+            transition: all 0.5s ease;
+        }
+
+        .photo-frame:hover {
+            transform: rotate(0deg) scale(1.03);
+        }
+
+        .message {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .ribbon {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: #fbcfe8;
+            top: -10px;
+            right: -10px;
+            clip-path: polygon(100% 0%, 100% 100%, 50% 80%, 0 100%, 0 0);
+            transform: rotate(45deg) translateX(50px) translateY(-30px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            opacity: 0;
+        }
+
+        .baby-icon {
+            animation: rock 3s infinite ease-in-out;
+        }
+
+        @keyframes rock {
+
+            0%,
+            100% {
+                transform: rotate(-5deg);
+            }
+
+            50% {
+                transform: rotate(5deg);
+            }
+        }
+
+        .envelope {
+            position: relative;
+            perspective: 1000px;
+        }
+
+        .envelope-cover {
+            transform-origin: top;
+            transition: transform 1.5s ease;
+            background: linear-gradient(145deg, #ec4899, #db2777);
+        }
+
+        .envelope-open .envelope-cover {
+            transform: rotateX(180deg);
+        }
+
+        .card-content {
+            transform: translateY(20px);
+            opacity: 0;
+            transition: all 1.5s ease 0.5s;
+        }
+
+        .envelope-open .card-content {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* Mobile optimizations */
+        @media (max-width: 640px) {
+            .ribbon {
+                width: 100px;
+                height: 100px;
+                transform: rotate(45deg) translateX(30px) translateY(-20px);
+            }
+
+            .card {
+                padding: 1.5rem !important;
+            }
+
+            .photo-frame {
+                border-width: 8px;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .name-highlight {
+            background: linear-gradient(to right, #ec4899, #db2777);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: bold;
+        }
+
+        .baby-name {
+            display: inline-block;
+            background-color: #fce7f3;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            color: #be185d;
+            font-weight: 600;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+    <style>
+        *,
+        ::before,
+        ::after {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            --tw-contain-size: ;
+            --tw-contain-layout: ;
+            --tw-contain-paint: ;
+            --tw-contain-style:
+        }
+
+        ::backdrop {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            --tw-contain-size: ;
+            --tw-contain-layout: ;
+            --tw-contain-paint: ;
+            --tw-contain-style:
+        }
+
+        /* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb
+        }
+
+        ::after,
+        ::before {
+            --tw-content: ''
+        }
+
+        :host,
+        html {
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            -moz-tab-size: 4;
+            tab-size: 4;
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        body {
+            margin: 0;
+            line-height: inherit
+        }
+
+        hr {
+            height: 0;
+            color: inherit;
+            border-top-width: 1px
+        }
+
+        abbr:where([title]) {
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: inherit
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit
+        }
+
+        b,
+        strong {
+            font-weight: bolder
+        }
+
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            font-size: 1em
+        }
+
+        small {
+            font-size: 80%
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline
+        }
+
+        sub {
+            bottom: -.25em
+        }
+
+        sup {
+            top: -.5em
+        }
+
+        table {
+            text-indent: 0;
+            border-color: inherit;
+            border-collapse: collapse
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+            font-feature-settings: inherit;
+            font-variation-settings: inherit;
+            font-size: 100%;
+            font-weight: inherit;
+            line-height: inherit;
+            letter-spacing: inherit;
+            color: inherit;
+            margin: 0;
+            padding: 0
+        }
+
+        button,
+        select {
+            text-transform: none
+        }
+
+        button,
+        input:where([type=button]),
+        input:where([type=reset]),
+        input:where([type=submit]) {
+            -webkit-appearance: button;
+            background-color: transparent;
+            background-image: none
+        }
+
+        :-moz-focusring {
+            outline: auto
+        }
+
+        :-moz-ui-invalid {
+            box-shadow: none
+        }
+
+        progress {
+            vertical-align: baseline
+        }
+
+        ::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+            height: auto
+        }
+
+        [type=search] {
+            -webkit-appearance: textfield;
+            outline-offset: -2px
+        }
+
+        ::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit
+        }
+
+        summary {
+            display: list-item
+        }
+
+        blockquote,
+        dd,
+        dl,
+        figure,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        p,
+        pre {
+            margin: 0
+        }
+
+        fieldset {
+            margin: 0;
+            padding: 0
+        }
+
+        legend {
+            padding: 0
+        }
+
+        menu,
+        ol,
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+
+        dialog {
+            padding: 0
+        }
+
+        textarea {
+            resize: vertical
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            opacity: 1;
+            color: #9ca3af
+        }
+
+        [role=button],
+        button {
+            cursor: pointer
+        }
+
+        :disabled {
+            cursor: default
+        }
+
+        audio,
+        canvas,
+        embed,
+        iframe,
+        img,
+        object,
+        svg,
+        video {
+            display: block;
+            vertical-align: middle
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto
+        }
+
+        [hidden]:where(:not([hidden=until-found])) {
+            display: none
+        }
+
+        .absolute {
+            position: absolute
+        }
+
+        .relative {
+            position: relative
+        }
+
+        .z-10 {
+            z-index: 10
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .mb-2 {
+            margin-bottom: 0.5rem
+        }
+
+        .mb-3 {
+            margin-bottom: 0.75rem
+        }
+
+        .mb-6 {
+            margin-bottom: 1.5rem
+        }
+
+        .mt-2 {
+            margin-top: 0.5rem
+        }
+
+        .mt-6 {
+            margin-top: 1.5rem
+        }
+
+        .flex {
+            display: flex
+        }
+
+        .inline-flex {
+            display: inline-flex
+        }
+
+        .aspect-\[4\/5\] {
+            aspect-ratio: 4/5
+        }
+
+        .h-16 {
+            height: 4rem
+        }
+
+        .h-4 {
+            height: 1rem
+        }
+
+        .h-5 {
+            height: 1.25rem
+        }
+
+        .h-6 {
+            height: 1.5rem
+        }
+
+        .h-full {
+            height: 100%
+        }
+
+        .min-h-screen {
+            min-height: 100vh
+        }
+
+        .w-16 {
+            width: 4rem
+        }
+
+        .w-4 {
+            width: 1rem
+        }
+
+        .w-5 {
+            width: 1.25rem
+        }
+
+        .w-6 {
+            width: 1.5rem
+        }
+
+        .w-full {
+            width: 100%
+        }
+
+        .max-w-md {
+            max-width: 28rem
+        }
+
+        .flex-col {
+            flex-direction: column
+        }
+
+        .items-center {
+            align-items: center
+        }
+
+        .justify-center {
+            justify-content: center
+        }
+
+        .gap-2 {
+            gap: 0.5rem
+        }
+
+        .gap-3 {
+            gap: 0.75rem
+        }
+
+        .gap-6 {
+            gap: 1.5rem
+        }
+
+        .space-y-4> :not([hidden])~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(1rem * var(--tw-space-y-reverse))
+        }
+
+        .overflow-hidden {
+            overflow: hidden
+        }
+
+        .rounded-full {
+            border-radius: 9999px
+        }
+
+        .rounded-lg {
+            border-radius: 0.5rem
+        }
+
+        .rounded-xl {
+            border-radius: 0.75rem
+        }
+
+        .rounded-t-lg {
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem
+        }
+
+        .bg-pink-100 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(252 231 243 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-pink-500 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(236 72 153 / var(--tw-bg-opacity, 1))
+        }
+
+        .p-2 {
+            padding: 0.5rem
+        }
+
+        .p-4 {
+            padding: 1rem
+        }
+
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem
+        }
+
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem
+        }
+
+        .text-center {
+            text-align: center
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+            line-height: 2rem
+        }
+
+        .text-3xl {
+            font-size: 1.875rem;
+            line-height: 2.25rem
+        }
+
+        .text-lg {
+            font-size: 1.125rem;
+            line-height: 1.75rem
+        }
+
+        .text-sm {
+            font-size: 0.875rem;
+            line-height: 1.25rem
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem
+        }
+
+        .font-bold {
+            font-weight: 700
+        }
+
+        .font-medium {
+            font-weight: 500
+        }
+
+        .italic {
+            font-style: italic
+        }
+
+        .leading-relaxed {
+            line-height: 1.625
+        }
+
+        .text-gray-700 {
+            --tw-text-opacity: 1;
+            color: rgb(55 65 81 / var(--tw-text-opacity, 1))
+        }
+
+        .text-pink-400 {
+            --tw-text-opacity: 1;
+            color: rgb(244 114 182 / var(--tw-text-opacity, 1))
+        }
+
+        .text-pink-500 {
+            --tw-text-opacity: 1;
+            color: rgb(236 72 153 / var(--tw-text-opacity, 1))
+        }
+
+        .text-pink-600 {
+            --tw-text-opacity: 1;
+            color: rgb(219 39 119 / var(--tw-text-opacity, 1))
+        }
+
+        .text-pink-700 {
+            --tw-text-opacity: 1;
+            color: rgb(190 24 93 / var(--tw-text-opacity, 1))
+        }
+
+        .text-white {
+            --tw-text-opacity: 1;
+            color: rgb(255 255 255 / var(--tw-text-opacity, 1))
+        }
+
+        .text-pink-200 {
+            --tw-text-opacity: 1;
+            color: rgb(251 207 232 / var(--tw-text-opacity, 1))
+        }
+
+        .text-pink-300 {
+            --tw-text-opacity: 1;
+            color: rgb(249 168 212 / var(--tw-text-opacity, 1))
+        }
+
+        .shadow-lg {
+            --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+        }
+
+        @media (min-width: 640px) {
+            .sm\:p-6 {
+                padding: 1.5rem
+            }
+
+            .sm\:text-4xl {
+                font-size: 2.25rem;
+                line-height: 2.5rem
+            }
+
+            .sm\:text-base {
+                font-size: 1rem;
+                line-height: 1.5rem
+            }
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="envelope w-full max-w-md mx-auto" id="envelope">
+        <div
+            class="envelope-cover absolute w-full h-16 bg-pink-500 z-10 rounded-t-lg shadow-lg flex items-center justify-center">
+            <span class="text-white font-bold">Tap to Open</span>
+        </div>
+
+        <div class="card-content">
+            <div class="card relative rounded-xl overflow-hidden p-4 sm:p-6 w-full max-w-md mx-auto">
+                <div class="ribbon"></div>
+
+                <!-- Header -->
+                <div class="text-center mb-6">
+                    <h1 class="dancing-script text-3xl sm:text-4xl font-bold text-pink-600 mb-2 message">Happy First
+                        Mother's Day</h1>
+                    <p class="text-pink-500 text-lg message">To <span class="name-highlight">My QUEEN</span></p>
+                </div>
+
+                <!-- Main Content -->
+                <div class="flex flex-col gap-6 items-center">
+                    <!-- Photo Frame - Replace with your wife's photo -->
+                    <div
+                        class="photo-frame rounded-lg overflow-hidden w-full aspect-[4/5] bg-pink-100 flex items-center justify-center message">
+                        <!-- <div class="text-center p-4">
+                            <svg class="w-56 h-56 mx-auto text-pink-400 mb-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+
+                        </div> -->
+                        <img src="Mum.jpg" alt="">
+                    </div>
+
+                    <!-- Message -->
+                    <div class="w-full space-y-4">
+                        <div class="message">
+                            <h2 class="dancing-script text-2xl text-pink-600 mb-2">My Dearest Mercy,</h2>
+                            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+                                Today marks your very first Mother's Day, and I couldn't be more proud of the amazing
+                                mother you've become. Watching you care for our precious little <span class="baby-name"
+                                    style="transition: 0.3s;">Jaxton Bawa</span> with such love and tenderness fills my
+                                heart with joy beyond words.
+                            </p>
+                        </div>
+
+                        <div class="message">
+                            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+                                The way you've embraced motherhood, even through sleepless nights and new challenges,
+                                shows your incredible strength and love. You are the heart of our family, and I love you
+                                more than words can express.
+                            </p>
+                        </div>
+
+                        <div class="flex items-center gap-3 message">
+                            <div class="baby-icon bg-pink-100 rounded-full p-2">
+                                <svg class="w-6 h-6 text-pink-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm0-2a6 6 0 100-12 6 6 0 000 12z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <p class="text-pink-600 font-medium text-sm sm:text-base">Jaxton is so lucky to have you as
+                                his mom.</p>
+                        </div>
+
+                        <div class="message">
+                            <p class="text-gray-700 italic text-sm sm:text-base">
+                                "To the world you may be one person, but to our family you are the world."
+                            </p>
+                        </div>
+
+                        <div class="flex items-center gap-2 message">
+                            <span class="text-pink-600 font-bold">With all my love,</span>
+                            <svg class="heart w-5 h-5 text-pink-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+
+                        <div class="dancing-script text-xl text-pink-600 message">
+                            Your Loving Husband
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="mt-6 text-center message">
+                    <div class="inline-flex items-center gap-2 bg-pink-100 px-4 py-2 rounded-full">
+                        <svg class="w-4 h-4 text-pink-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="font-medium text-pink-700 text-sm">Mother's Day 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating flowers and hearts -->
+    <div id="floating-elements">
+        <div class="flower"
+            style="left: 47.0274%; bottom: -50px; width: 17.9887px; height: 21.234px; animation-delay: 6.09609s; animation-duration: 11.8595s; color: rgb(236, 72, 153);">
+            <svg class="w-full h-full text-pink-200" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0-2a6 6 0 100-12 6 6 0 000 12z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </div>
+        <div class="flower"
+            style="left: 90.3944%; bottom: -50px; width: 17.902px; height: 12.8465px; animation-delay: 3.73497s; animation-duration: 15.5769s; color: rgb(251, 207, 232);">
+            <svg class="w-full h-full text-pink-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                    d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </div>
+        <div class="flower"
+            style="left: 23.7991%; bottom: -50px; width: 20.1893px; height: 18.7271px; animation-delay: 4.58475s; animation-duration: 13.4617s; color: rgb(244, 114, 182);">
+            <svg class="w-full h-full text-pink-200" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0-2a6 6 0 100-12 6 6 0 000 12z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </div>
+        <div class="flower"
+            style="left: 79.5972%; bottom: -50px; width: 14.8106px; height: 19.6279px; animation-delay: 11.9212s; animation-duration: 19.0542s; color: rgb(254, 205, 211);">
+            <svg class="w-full h-full text-pink-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                    d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </div>
+        <div class="flower"
+            style="left: 99.4566%; bottom: -50px; width: 21.6545px; height: 20.1357px; animation-delay: 8.24547s; animation-duration: 18.0135s; color: rgb(251, 207, 232);">
+            <svg class="w-full h-full text-pink-200" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0-2a6 6 0 100-12 6 6 0 000 12z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </div>
+        <div class="flower"
+            style="left: 56.6741%; bottom: -50px; width: 14.4644px; height: 15.2972px; animation-delay: 14.5892s; animation-duration: 11.3682s; color: rgb(249, 168, 212);">
+            <svg class="w-full h-full text-pink-300" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                    d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h.5a1.5 1.5 0 010 3H14a1 1 0 00-1 1v.5a1.5 1.5 0 01-3 0V9a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H9a1 1 0 001-1v-.5z">
+                </path>
+                <path d="M10 7a3 3 0 100 6 3 3 0 000-6z"></path>
+            </svg>
+        </div>
+        <div class="flower"
+            style="left: 24.2445%; bottom: -50px; width: 10.9005px; height: 18.6838px; animation-delay: 9.15707s; animation-duration: 10.8436s; color: rgb(244, 114, 182);">
+            <svg class="w-full h-full text-pink-300" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                    d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h.5a1.5 1.5 0 010 3H14a1 1 0 00-1 1v.5a1.5 1.5 0 01-3 0V9a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H9a1 1 0 001-1v-.5z">
+                </path>
+                <path d="M10 7a3 3 0 100 6 3 3 0 000-6z"></path>
+            </svg>
+        </div>
+        <div class="flower"
+            style="left: 47.6224%; bottom: -50px; width: 12.3174px; height: 23.7304px; animation-delay: 4.72599s; animation-duration: 11.0304s; color: rgb(244, 114, 182);">
+            <svg class="w-full h-full text-pink-300" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                    d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h.5a1.5 1.5 0 010 3H14a1 1 0 00-1 1v.5a1.5 1.5 0 01-3 0V9a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H9a1 1 0 001-1v-.5z">
+                </path>
+                <path d="M10 7a3 3 0 100 6 3 3 0 000-6z"></path>
+            </svg>
+        </div>
+        <div class="flower"
+            style="left: 95.1154%; bottom: -50px; width: 17.884px; height: 10.2288px; animation-delay: 1.45256s; animation-duration: 10.0384s; color: rgb(236, 72, 153);">
+            <svg class="w-full h-full text-pink-300" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                    d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h.5a1.5 1.5 0 010 3H14a1 1 0 00-1 1v.5a1.5 1.5 0 01-3 0V9a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H9a1 1 0 001-1v-.5z">
+                </path>
+                <path d="M10 7a3 3 0 100 6 3 3 0 000-6z"></path>
+            </svg>
+        </div>
+        <div class="flower"
+            style="left: 75.3105%; bottom: -50px; width: 21.6197px; height: 23.1454px; animation-delay: 13.5508s; animation-duration: 18.8749s; color: rgb(236, 72, 153);">
+            <svg class="w-full h-full text-pink-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                    d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </div>
+        <div class="flower"
+            style="left: 6.35358%; bottom: -50px; width: 17.1333px; height: 18.7451px; animation-delay: 12.257s; animation-duration: 17.3218s; color: rgb(244, 114, 182);">
+            <svg class="w-full h-full text-pink-300" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                    d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h.5a1.5 1.5 0 010 3H14a1 1 0 00-1 1v.5a1.5 1.5 0 01-3 0V9a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H9a1 1 0 001-1v-.5z">
+                </path>
+                <path d="M10 7a3 3 0 100 6 3 3 0 000-6z"></path>
+            </svg>
+        </div>
+        <div class="flower"
+            style="left: 19.3756%; bottom: -50px; width: 11.0639px; height: 22.6213px; animation-delay: 4.84863s; animation-duration: 12.5174s; color: rgb(236, 72, 153);">
+            <svg class="w-full h-full text-pink-300" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                    d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h.5a1.5 1.5 0 010 3H14a1 1 0 00-1 1v.5a1.5 1.5 0 01-3 0V9a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H9a1 1 0 001-1v-.5z">
+                </path>
+                <path d="M10 7a3 3 0 100 6 3 3 0 000-6z"></path>
+            </svg>
+        </div>
+        <div class="flower"
+            style="left: 44.8274%; bottom: -50px; width: 13.5384px; height: 11.1807px; animation-delay: 3.93846s; animation-duration: 11.7588s; color: rgb(249, 168, 212);">
+            <svg class="w-full h-full text-pink-200" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0-2a6 6 0 100-12 6 6 0 000 12z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </div>
+        <div class="flower"
+            style="left: 80.5069%; bottom: -50px; width: 22.9503px; height: 10.2585px; animation-delay: 4.58925s; animation-duration: 12.0537s; color: rgb(244, 114, 182);">
+            <svg class="w-full h-full text-pink-300" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                    d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h.5a1.5 1.5 0 010 3H14a1 1 0 00-1 1v.5a1.5 1.5 0 01-3 0V9a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H9a1 1 0 001-1v-.5z">
+                </path>
+                <path d="M10 7a3 3 0 100 6 3 3 0 000-6z"></path>
+            </svg>
+        </div>
+        <div class="flower"
+            style="left: 55.0195%; bottom: -50px; width: 14.6852px; height: 19.7309px; animation-delay: 11.0803s; animation-duration: 10.914s; color: rgb(249, 168, 212);">
+            <svg class="w-full h-full text-pink-300" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                    d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h.5a1.5 1.5 0 010 3H14a1 1 0 00-1 1v.5a1.5 1.5 0 01-3 0V9a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H9a1 1 0 001-1v-.5z">
+                </path>
+                <path d="M10 7a3 3 0 100 6 3 3 0 000-6z"></path>
+            </svg>
+        </div>
+    </div>
+
+    <script>
+        // Create floating elements
+        function createFloatingElements() {
+            const container = document.getElementById('floating-elements');
+            const colors = ['#fbcfe8', '#f9a8d4', '#f472b6', '#ec4899', '#fecdd3'];
+            const elements = [
+                // Heart SVG
+                '<svg class="w-full h-full text-pink-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>',
+                // Flower SVG
+                '<svg class="w-full h-full text-pink-300" fill="currentColor" viewBox="0 0 20 20"><path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h.5a1.5 1.5 0 010 3H14a1 1 0 00-1 1v.5a1.5 1.5 0 01-3 0V9a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H9a1 1 0 001-1v-.5z" /><path d="M10 7a3 3 0 100 6 3 3 0 000-6z" /></svg>',
+                // Baby footprint SVG
+                '<svg class="w-full h-full text-pink-200" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0-2a6 6 0 100-12 6 6 0 000 12z" clip-rule="evenodd"></path></svg>'
+            ];
+
+            for (let i = 0; i < 15; i++) {
+                const element = document.createElement('div');
+                element.className = 'flower';
+                element.style.left = `${Math.random() * 100}%`;
+                element.style.bottom = `-50px`;
+                element.style.width = `${Math.random() * 15 + 10}px`;
+                element.style.height = `${Math.random() * 15 + 10}px`;
+                element.style.animationDelay = `${Math.random() * 15}s`;
+                element.style.animationDuration = `${Math.random() * 10 + 10}s`;
+                element.style.color = colors[Math.floor(Math.random() * colors.length)];
+                element.innerHTML = elements[Math.floor(Math.random() * elements.length)];
+                container.appendChild(element);
+            }
+        }
+
+        // Create special baby name animation
+        function createBabyNameAnimation() {
+            const babyName = document.querySelector('.baby-name');
+            if (babyName) {
+                babyName.style.transition = 'all 0.3s ease';
+                babyName.addEventListener('click', function () {
+                    this.style.transform = 'scale(1.2)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 300);
+                });
+            }
+        }
+
+        // Animate messages sequentially
+        function animateMessages() {
+            const messages = document.querySelectorAll('.message');
+            messages.forEach((message, index) => {
+                setTimeout(() => {
+                    message.classList.add('fade-in');
+                }, 250 * index);
+            });
+        }
+
+        // Open envelope animation
+        document.getElementById('envelope').addEventListener('click', function () {
+            this.classList.add('envelope-open');
+            setTimeout(animateMessages, 1000);
+        });
+
+        // Initialize
+        window.addEventListener('load', function () {
+            createFloatingElements();
+            setTimeout(() => {
+                createBabyNameAnimation();
+            }, 2000);
+        });
+    </script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'93e39f76c0e4ee03',t:'MTc0Njk4NjkxOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+    <iframe height="1" width="1"
+        style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+</body>
+
+</html>
